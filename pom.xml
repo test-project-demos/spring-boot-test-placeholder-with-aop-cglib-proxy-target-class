@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring-boot-test-placeholder</artifactId>
+	<artifactId>spring-boot-test-placeholder-with-aop-cglib-proxy-target-class</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-test-placeholder</name>
+	<name>spring-boot-test-placeholder-with-aop-cglib-proxy-target-class</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -27,6 +27,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+<!--			<version>1.18.10</version>-->
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -39,6 +40,10 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 	</dependencies>
 
